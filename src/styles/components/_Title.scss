@@ -1,0 +1,31 @@
+.title {
+  &__title {
+    font-size: 1.7em ;
+    color: $grey;
+    margin-bottom: .5em;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+  }
+  &__step {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: $bg;
+    transition: background-color .2s ease;
+    margin-bottom: 6em;
+    &.active {
+      background-color: $purple;
+    }
+    &.break {
+      background-color: $orange;
+    }
+    &.end {
+      background-color: $green;
+    }
+  }
+}

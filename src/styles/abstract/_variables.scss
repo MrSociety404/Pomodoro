@@ -1,0 +1,24 @@
+// MEDIA
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// COLORS
+$white: #ffffff;
+$grey: #B3B5C0;
+$purple: #6A5AC7;
+$orange: #E7AD78;
+$green: #0CA549;
+
+$bg: #404562;
+$bg-main: linear-gradient(90deg, #3D425F 0%, #343954 0.01%, #2A2B4D 100%);
+
+$outline: #323751;
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+$fz: 16px;
+$ff: 'Raleway', sans-serif;

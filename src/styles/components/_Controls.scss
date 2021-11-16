@@ -1,0 +1,32 @@
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  &__btn {
+    background: $bg;
+    box-shadow: 0px 0px 34px -2px $bg;
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2.2em;
+    color: $grey;
+    transition: transform .2s ease, box-shadow .2s ease-in;
+    &:hover {
+      box-shadow: 0px 0px 10px -2px $purple;
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+    &.text {
+      width: unset;
+      height: unset;
+      padding: .5em 1em;
+      font-size: 1.4em;
+    }
+  }
+}
