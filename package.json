@@ -1,0 +1,43 @@
+{
+  "name": "promodoro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@becode/eslint-config": "^0.12.1",
+    "eslint": "^8.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-unicorn": "^38.0.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.0.2",
+    "parcel": "^2.0.1",
+    "prettier": "^2.4.1"
+  },
+  "lint-staged": {
+    "*.json": [
+      "npx prettier --write"
+    ],
+    "*.js": [
+      "npx eslint --fix --cache"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  }
+}
