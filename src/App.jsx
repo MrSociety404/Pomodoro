@@ -16,7 +16,7 @@ const editClass = (element, addClass, removeClass) => {
 };
 
 const App = () => {
-  const [time, setTime] = useState(5);
+  const [time, setTime] = useState(1200);
   const [initialTime, setInitialTime] = useState();
   const [title, setTitle] = useState("setup");
   const [play, setPlay] = useState(false);
@@ -28,7 +28,7 @@ const App = () => {
     if (play) {
       const interval = setInterval(() => {
         if (time === 0) {
-          audio.play()
+          audio.play();
           if (title === "break") {
             setTitle("end");
             editClass(countdown, "end", "break");
@@ -129,7 +129,7 @@ const App = () => {
           state={title}
         />
       </main>
-      <footer className="footer">
+      <footer title="Go to my Github" className="footer">
         <a href="https://github.com/MrSociety404">MrSociety404</a>
       </footer>
     </>

@@ -14,14 +14,6 @@ a {
   cursor: pointer;
 }
 
-#app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 100%;
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -30,7 +22,14 @@ a {
 }
 
 .footer {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
   text-align: center;
   color: $grey;
-  font-size: 0.8em;
+  transition: color .2s ease;
+  &:hover {
+    color: $white;
+  }
 }
