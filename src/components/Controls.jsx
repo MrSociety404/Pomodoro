@@ -1,11 +1,21 @@
 import Button from "./Button";
 
-const Controls = ({state, onClickPlay, onClickForward, onClickReset, onClickRemove, onClickAdd, onClickConfig, onClickRestart}) => {
+const Controls = ({
+  state,
+  onClickPlay,
+  onClickForward,
+  onClickReset,
+  onClickRemove,
+  onClickAdd,
+  onClickConfig,
+  onClickRestart,
+  onClickPause,
+}) => {
   if (state === "work" || state === "break") {
     return (
       <section className="controls">
         <Button icon="IoRefreshOutline" onClick={onClickReset} />
-        <Button icon="IoPauseOutline" onClick={onClickPlay} />
+        <Button icon="IoPauseOutline" onClick={onClickPause} />
         <Button icon="IoPlayForwardOutline" onClick={onClickForward} />
       </section>
     );

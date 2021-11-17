@@ -14,6 +14,14 @@ a {
   cursor: pointer;
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -23,10 +31,6 @@ a {
 
 .footer {
   text-align: center;
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
   color: $grey;
   font-size: 0.8em;
 }
