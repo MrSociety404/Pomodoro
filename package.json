@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html --public-url /",
-    "build": "parcel build src/index.html --public-url ./",
+    "dev": "parcel src/public/index.html --public-url /",
+    "build": "parcel build src/public/index.html --public-url ./",
     "prepare": "husky install"
   },
   "keywords": [],

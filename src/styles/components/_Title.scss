@@ -1,8 +1,11 @@
 .title {
+  width: 100px;
   &__title {
     font-size: 1.7em ;
+    text-align: center;
     color: $grey;
     margin-bottom: .5em;
+    text-transform: capitalize;
   }
   &__box {
     display: flex;
